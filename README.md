@@ -7,10 +7,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
@@ -71,3 +67,53 @@ export default defineConfig([
   },
 ])
 ```
+
+# Run
+
+## Clone the repository
+```
+git clone https://github.com/Projeto-Mobi/landing-page.git
+```
+
+## Install dependencies
+This project uses the pnpm package manager for Node.js
+
+If pnpm isn't installed in your machine, you can install it with npm by running these commands:
+
+```
+npx pnpm@latest-10 dlx @pnpm/exe@latest-10 setup
+```
+
+or
+
+```
+npm install -g pnpm@latest-10
+```
+
+There are also more related methods in the pnpm official installation docs: https://pnpm.io/installation
+
+### Installing dependencies from package.json
+
+In order to install the packages needed to run the landing-page server, run:
+
+```
+pnpm install
+```
+
+## Start
+
+### Dev server
+
+```
+pnpm dev
+```
+
+# Deploy
+
+## Automated deploy
+
+This project has automated deploy provided by Github Actions workflow https://github.com/Projeto-Mobi/landing-page/blob/initial-project-structure/.github/workflows/deploy.yml. This CI/CD pipeline applies Github Pages deploy on every push to the main branch.
+
+## Manual deploy
+
+Run ```pnpm build``` for creating a static production build of the project using Vite's Building for Production command. The build output files are located in `/dist` by default.
