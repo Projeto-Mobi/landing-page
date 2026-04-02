@@ -112,7 +112,7 @@ pnpm dev
 
 ## Automated deploy
 
-This project has automated deploy provided by Github Actions workflow https://github.com/Projeto-Mobi/landing-page/blob/initial-project-structure/.github/workflows/deploy.yml. This CI/CD pipeline applies Github Pages deploy on every push to the main branch.
+This project has automated deploy provided by Github Actions [workflow](https://github.com/Projeto-Mobi/landing-page/blob/main/README.md). This CI/CD pipeline applies Github Pages deploy on every push to the main branch.
 
 ## Manual deploy
 
