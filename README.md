@@ -1,11 +1,6 @@
-# React + TypeScript + Vite
+# Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The official Mobi landing page repository. Following, there are some instructions on how to run, deploy and setup the development environment of the application.
 
 ## Expanding the ESLint configuration
 
@@ -68,14 +63,27 @@ export default defineConfig([
 ])
 ```
 
-# Run
+# Run the application
 
 ## Clone the repository
 ```
 git clone https://github.com/Projeto-Mobi/landing-page.git
 ```
 
-## Install dependencies
+The landing-page can run isolated with Docker containers or locally with Node.js and Vite.
+
+## 1. Docker
+
+You can run the application in Docker containers using the following command:
+
+```
+docker compose up --build
+```
+
+## 2. Node.js (pnpm)
+
+### Setup
+
 This project uses the pnpm package manager for Node.js
 
 If pnpm isn't installed in your machine, you can install it with npm by running these commands:
@@ -90,7 +98,7 @@ or
 npm install -g pnpm@latest-10
 ```
 
-There are also more related methods in the pnpm official installation docs: https://pnpm.io/installation
+There are also more related methods available in the pnpm official installation docs: https://pnpm.io/installation
 
 ### Installing dependencies from package.json
 
@@ -99,8 +107,6 @@ In order to install the packages needed to run the landing-page server, run:
 ```
 pnpm install
 ```
-
-## Start
 
 ### Dev server
 
@@ -116,4 +122,6 @@ This project has automated deploy provided by Github Actions [workflow](https://
 
 ## Manual deploy
 
-Run ```pnpm build``` for creating a static production build of the project using Vite's Building for Production command. The build output files are located in `/dist` by default.
+Run ```pnpm build``` to create a static production build of the project using Vite's Building for Production command. The build output files are located in `/dist` by default. This static build can be deployed with a web server of your choose.
+
+For development testing, you can run a production build preview with ```pnpm preview```
