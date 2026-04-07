@@ -1,7 +1,7 @@
 function About() {
     return (
-        <div id="about" className="flex items-center m-auto flex-col gap-2">
-            <div>
+        <section id="about" className="flex items-center m-auto flex-col gap-2">
+            <div className="mx-8 md:mx-48 my-24">
                 <h2 className="self-start font-bold text-xl mb-2">Sobre nós</h2>
                 <p className="text-justify">
                 Somos um projeto mantido por estudantes e professores da FURG em uma iniciativa de código aberto e cooperação.
@@ -10,7 +10,7 @@ function About() {
                 caronas solidárias dentro da universidade.
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
 
