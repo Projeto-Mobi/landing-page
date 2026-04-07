@@ -1,10 +1,10 @@
-import logo from '/logo.png'
-import playStore from '/play-store.png'
-import appStore from '/app-store.png'
+import logo from '/logo.png';
+import playStore from '/play-store.png';
+import appStore from '/app-store.png';
 
 function Banner() {
     return (
-        <div className="flex flex-wrap justify-center gap-10 p-5 items-center w-full mb-4">
+        <section id='beginning' className="h-screen flex flex-wrap justify-center gap-10 p-5 items-center w-full mb-4">
             <div className="text-center sm:text-justify">
                 <div className="font-bold mb-4">
                     <p className="text-furg-yellow text-5xl">Carona ou ônibus</p>
@@ -18,7 +18,7 @@ function Banner() {
             <div>
                 <img src={logo} className="w-40 rounded-2xl" />
             </div>
-        </div>
+        </section>
     )
 }
 
