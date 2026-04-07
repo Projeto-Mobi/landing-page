@@ -11,10 +11,8 @@ function App() {
       <Header />
       <main className="w-full flex items-center justify-center flex-col mb-4">
         <Banner />
-        <section className="w-[80%] px-[10%]">
-          <Features />
-          <About />
-        </section>
+        <Features />
+        <About />
       </main>
       <Footer />
     </>
