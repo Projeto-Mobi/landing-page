@@ -28,7 +28,7 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [isScrolled]);
+    }, []);
 
     return (
         <header className={`${isScrolled ? "bg-transparent" : ""} transition duration-300 sticky top-0 mb-4 flex items-center w-full h-12 p-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] bg-furg-yellow justify-between`}>
