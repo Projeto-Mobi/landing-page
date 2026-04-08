@@ -5,7 +5,12 @@ function ToggleDarkMode() {
     const { isDarkMode, toggleDarkMode } = useDarkMode();
 
     return (
-        <button className="cursor-pointer p-2 outline-none" onClick={toggleDarkMode}>
+        <button
+            className="cursor-pointer p-2 outline-none"
+            onClick={toggleDarkMode}
+            aria-label="Toggle dark mode"
+            aria-pressed={isDarkMode}
+        >
             {/* { isDarkMode ? "Dark mode" : <Sun /> + "Light mode"} */}
             { isDarkMode ? <Moon /> : <Sun /> }
         </button>
