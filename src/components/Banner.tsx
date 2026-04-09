@@ -1,6 +1,4 @@
 import logo from '/logo.png';
-import playStore from '/play-store.png';
-import appStore from '/app-store.png';
 
 function Banner() {
     return (
