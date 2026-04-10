@@ -2,7 +2,7 @@ import logo from '/logo.png';
 
 function Banner() {
     return (
-        <section id='beginning' className="h-screen flex flex-wrap justify-center gap-10 p-5 items-center w-full mb-4">
+        <section id='beginning' className="my-24 flex flex-wrap justify-center gap-10 p-5 items-center w-full">
             <div className="text-center sm:text-justify">
                 <div className="font-bold mb-4">
                     <p className="text-furg-yellow text-5xl">Carona ou ônibus</p>

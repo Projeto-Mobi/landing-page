@@ -8,33 +8,14 @@
   --font-poppins: "Poppins", sans-serif;
   --font-roboto: Roboto, sans-serif;
   --font-manrope: "Manrope", Sans-serif;
-
-  --animate-slide: slide 1s ease-in-out;
-
-  @keyframes slide {
-    0% {
-      width: 0%;
-    }
-    
-    25% {
-      width: 25%;
-    }
-
-    100% {
-      width: 100%;
-    }
-  }
-
 }
 
 :root {
   --text: #000000;
   --bg: #fff;
-
   --sans: system-ui, "Poppins", sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
-
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -53,6 +34,7 @@
 .dark {
   --text: #ffffff;
   --bg:#16171d;
+  color-scheme: dark;
 }
 
 .logoFurg {
@@ -60,11 +42,6 @@
 }
 .logoC3 {
   width: 50px;
-}
-
-@keyframes slide {
-  from {width: 5%}
-  to { width: 100%}
 }
 
 nav ul li::after{

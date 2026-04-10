@@ -1,3 +1,4 @@
+import ThemeProvider from '@/context/ThemeProvider';
 import Header from '@components/Header'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
@@ -8,13 +9,15 @@ function App() {
 
   return (
     <>
-      <Header />
-      <main className="w-full flex items-center justify-center flex-col mb-4">
-        <Banner />
-        <Features />
-        <About />
-      </main>
-      <Footer />
+      <ThemeProvider>
+        <Header />
+        <main className="w-full flex items-center justify-center flex-col mb-4">
+          <Banner />
+          <Features />
+          <About />
+        </main>
+        <Footer />
+      </ThemeProvider>
     </>
   )
 }
