@@ -4,7 +4,7 @@ import logoTransparentLight from '/logo-transparent-light.svg'
 
 function Footer() {
     return (
-        <footer className="flex flex-col p-5 bg-stone-950 h-50 text-white">
+        <footer className="flex flex-col p-5 bg-stone-950 h-fit text-white">
             <img src={logoTransparentLight} className="w-32 mb-3" alt="Logo MobiFurg" />
             <div className="h-px w-full bg-stone-800 mb-5"></div>
             <div className="flex justify-around items-center gap-10 flex-wrap">
