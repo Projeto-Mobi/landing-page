@@ -35,7 +35,7 @@ function Header() {
     }, []);
 
     return (
-        <header className={`${isScrolled ? "bg-transparent" : "bg-furg-yellow"} transition duration-300 sticky top-0 flex items-center w-full h-14 p-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] justify-between`}>
+        <header className={`${isScrolled ? "bg-transparent" : "bg-furg-yellow"} z-50 transition duration-300 sticky top-0 flex items-center w-full h-14 p-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] justify-between`}>
             <a href="/landing-page/" aria-label="Logo MobiFurg">
                 <img src={isScrolled ? (theme === "light" ? logoTransparentDark : logoTransparentHeaderDark) : logoTransparent} className="w-18" alt="Logo MobiFurg" />
             </a>
