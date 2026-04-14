@@ -35,8 +35,8 @@ function Header() {
     }, []);
 
     return (
-        <header className={`${isScrolled ? "bg-transparent" : "bg-furg-yellow"} transition duration-300 sticky top-0 flex items-center w-full h-14 p-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] justify-between`}>
-            <a href="/" aria-label="Logo MobiFurg">
+        <header className={`${isScrolled ? "bg-transparent backdrop-blur-sm" : "bg-furg-yellow"} z-50 transition duration-300 sticky top-0 flex items-center w-full h-14 p-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] justify-between`}>
+            <a href="/landing-page/" aria-label="Logo MobiFurg">
                 <img src={isScrolled ? (theme === "light" ? logoTransparentDark : logoTransparentHeaderDark) : logoTransparent} className="w-18" alt="Logo MobiFurg" />
             </a>
             {/* Desktop Menu */}
@@ -44,7 +44,7 @@ function Header() {
                 <ul className="flex gap-8 font-manrope font-bold">
                     {links.map((link) => (
                         <li key={link.name}>
-                            <a href={link.href} className="uppercase dark:text-white transition duration-300">{link.name}</a>
+                            <a href={link.href} className="uppercase transition duration-300">{link.name}</a>
                         </li>
                     ))}
                 </ul>
@@ -58,7 +58,7 @@ function Header() {
                     <ul className="flex flex-col gap-4 font-manrope font-bold items-center">
                         {links.map((link) => (
                             <li key={link.name}>
-                                <a href={link.href} className="uppercase dark:text-white" onClick={() => setOpenMenu(false)}>{link.name}</a>
+                                <a href={link.href} className="uppercase" onClick={() => setOpenMenu(false)}>{link.name}</a>
                             </li>
                         ))}
                     </ul>
