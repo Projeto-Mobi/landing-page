@@ -2,6 +2,8 @@
 
 The official Mobi landing page repository. Following, there are some instructions on how to run, deploy and setup the development environment of the application.
 
+The architecture documentation is available at [docs/architecture.md](docs/architecture.md)
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
