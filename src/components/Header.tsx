@@ -26,13 +26,25 @@ function Header() {
                 setIsScrolled(false);
             }
         }
-
+    
         window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        if (openMenu) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [openMenu]);
 
     return (
         <header className={`${isScrolled ? "bg-transparent backdrop-blur-sm" : "bg-furg-yellow"} z-50 transition duration-300 sticky top-0 flex items-center w-full h-14 p-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] justify-between`}>
@@ -51,7 +63,7 @@ function Header() {
             </nav>
             {/* Mobile Menu */}
             {openMenu && (
-                <nav className="flex flex-col md:hidden bg-furg-yellow fixed inset-0 overflow-hidden">
+                <nav className="flex flex-col md:hidden bg-furg-yellow fixed inset-0 overflow-y-auto">
                     <button className="cursor-pointer flex justify-end p-4" onClick={() => setOpenMenu(false)}>
                         <X />
                     </button>
