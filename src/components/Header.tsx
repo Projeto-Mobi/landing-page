@@ -63,7 +63,7 @@ function Header() {
             </nav>
             {/* Mobile Menu */}
             {openMenu && (
-                <nav className="flex flex-col md:hidden bg-furg-yellow fixed inset-0 overflow-y-auto">
+                <nav className="flex flex-col md:hidden bg-furg-yellow h-dvh fixed inset-x-0 top-0 overflow-y-auto">
                     <button className="cursor-pointer flex justify-end p-4" onClick={() => setOpenMenu(false)}>
                         <X />
                     </button>
